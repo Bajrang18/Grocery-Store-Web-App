@@ -1,2 +1,4 @@
 venv
 .evn
+instance
+__pycache__
