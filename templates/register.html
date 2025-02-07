@@ -1,36 +1,30 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-    Register page
+    Register Page
 {% endblock %}
-
 {% block content %}
-    <h1>Register</h1>
+<h1 class="display-1">Register</h1>
 
-    <form action="" class="form">
+<form action="" class="form" method="post">
     <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username" required>
+        <label for="username" class="form-label">Username</label>
+        <input type="text" name="username" required class="form-control">
     </div>
     <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" required>
+        <label for="password" class="form-label">Password</label>
+        <input type="password" name="password" required class="form-control">
     </div>
     <div class="form-group">
-        <label for="confirm_password">Confirm Password</label>
-        <input type="password" name="confirm_password" id="confirm_password" required>
+        <label for="confirm_password" class="form-label">Confirm Password</label>
+        <input type="password" name="confirm_password" required class="form-control">
     </div>
     <div class="form-group">
-        <label for="name">Name</label> 
-        <input type="text" name="name" id="name">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" name="name" class="form-control">
     </div>
     <div class="form-group">
-        <button type="submit">Register</button>
+        <input type="submit" value="Register" class="btn btn-primary">
     </div>
-    </form>
-     
-
-
-
-
+</form>
 {% endblock %}

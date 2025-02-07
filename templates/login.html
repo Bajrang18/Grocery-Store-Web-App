@@ -1,24 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grocery Store Application</title>
-</head>
-<body>
-    <h1>Login</h1>
-    <form action="" class="my-form">
-        <div class="form-group"*>
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username">
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-        </div>
-        <div class="form-group">
-            <button type="submit">Login</button>
-        </div>
-    </form>  
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block title %}
+    Login Page
+{% endblock %}
+
+{% block content %}
+
+<h1 class="display-1">Login</h1>
+
+<form action="" class="form" method="post">
+    <div class="form-group">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" name="username" required class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" name="password" required class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Login" class="btn btn-primary">
+    </div>
+</form>
+    
+{% endblock %}
